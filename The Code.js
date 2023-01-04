@@ -12,13 +12,13 @@
 <br>
 <p color:black style='padding:5px'> by daschoolcoder</p>
            </div>`;
-          e.style = "position: absolute; top: 0px; left: 20px;";
+          e.style = "position: absolute; top: 0px; left: 20px;z-index: 99";
           document.body.appendChild(e);
 const hb = document.getElementById("h_btn");
 hb.onclick = function () {
  const ro = document.createElement("button");
  ro.innerHTML = "re open";
- ro.style = ' position: absolute; top: 1px; left: 20px;z-index: 10';
+ ro.style = ' position: absolute; top: 1px; left: 20px;z-index: 100';
  
  document.body.removeChild(e);
  document.body.appendChild(ro);
